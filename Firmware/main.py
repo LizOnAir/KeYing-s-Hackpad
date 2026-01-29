@@ -19,7 +19,7 @@ keyboard = KMKKeyboard()
 keyboard.col_pins = (board.GP2, board.GP1, board.GP0, board.GP28)
 keyboard.row_pins = (board.GP0, board.GP4, board.GP3,)
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
-i2c = busio.I2C(scl=board.GP6, sda=board.GP5)
+i2c = busio.I2C(scl=board.GP_SCL, sda=board.GP_SDA)
 rgb = RGB(pixel_pin=board.GP6, num_pixels=12)
 
 oled_text = DisplayText()
@@ -67,7 +67,7 @@ def before_matrix_scan():
     if keyboard.active_layers[0] == 0:
         oled_text.text = "Mode:\nNumber Pad"
     else:
-        oled_text.text = "Mode:\nNavigate"
+        oled_text.text = "Mode:\nMedia"
 
 keyboard.before_matrix_scan.append(before_matrix_scan)
 KC.RGB_MODE_BREATHE()
