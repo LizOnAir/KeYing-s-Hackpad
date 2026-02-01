@@ -6,7 +6,7 @@ This hackpad is a 12 key macropad with a rotary encoder, an OLED Display. It als
 - Upper black layer with transparent bottom acrylic case
 - 128x32 OLED Display
 - EC11 Rotary encoder
-- 12 SK6812 MINI-E LEDs
+- 12 SK6812 MINI-E LEDs (to produce underglow effect)
 - 12 Keys
 
 ## CAD Model:
