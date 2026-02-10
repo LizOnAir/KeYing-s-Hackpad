@@ -26,6 +26,7 @@ Schematic
 
 PCB
 <img width="514" height="500" alt="Screenshot 2026-01-26 at 12 03 23 PM" src="https://github.com/user-attachments/assets/cbb5fe79-8735-4911-9c38-9d7e036f8e40" />
+
 I used MX_V2 for the keyswitch footprints.
 The unicorn silkscreen image was imported from [FLATICON](https://www.flaticon.com/).
 
