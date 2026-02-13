@@ -7,6 +7,7 @@ from kmk.keys import KC
 from kmk.scanners import DiodeOrientation
 from kmk.modules.layers import Layers
 from kmk.modules.holdtap import HoldTap
+from kmk.modules.rapidfire import RapidFire
 from kmk.modules.encoder import EncoderHandler
 from kmk.extensions.media_keys import MediaKeys
 from kmk.modules.mouse_keys import MouseKeys
@@ -33,6 +34,7 @@ oled = Display(
 encoder = EncoderHandler()
 holdtap = HoldTap()
 keyboard.modules.append(holdtap)
+keyboard.modules.append(RapidFire())
 keyboard.modules.append(Layers())
 keyboard.modules.append(encoder)
 keyboard.modules.append(MediaKeys())
@@ -43,6 +45,7 @@ encoder.pins = ((board.GPIO26, board.GPIO27, None),)
 RAISE = KC.HT(KC.TAP, KC.HOLD, prefer_hold=True, tap_interrupted=False, tap_time=2000, repeat=HoldTapRepeat.NONE)
 TRANS = KC.TRANS
 BASE = KC.DF(0)
+LMB_click = KC.RF(KC.MB_LMB, timeout = 10, interval 100) # 10 click per sec (interval)
 
 keyboard.keymap = [#layer 0
                     [RAISE,
@@ -53,7 +56,7 @@ keyboard.keymap = [#layer 0
                   [#layer 1
                     [TRANS,
                     KC.MUTE,  KC.MRWD, KC.MPLY, KC.MFFD,
-                    KC.KP_ENTER, KC.UP,  TRANS,  TRANS,
+                    KC.KP_ENTER, KC.UP,  LMB_click,  TRANS,
                     KC.LEFT,  KC.DOWN,  KC.RIGHT,  TRANS
                   ],
 ]
