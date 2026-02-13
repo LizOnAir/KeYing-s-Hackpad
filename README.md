@@ -22,9 +22,11 @@ Made in Fusion360.Liz
 ## PCB
 Here's my PCB! It was made in KiCad. 
 Schematic
+
 <img width="415" height="203" alt="Screenshot 2026-01-26 at 8 29 48 AM" src="https://github.com/user-attachments/assets/00ce3c77-728b-42fe-b1c0-dff4e132f134" />
 
 PCB
+
 <img width="514" height="500" alt="Screenshot 2026-01-26 at 12 03 23 PM" src="https://github.com/user-attachments/assets/cbb5fe79-8735-4911-9c38-9d7e036f8e40" />
 
 I used MX_V2 for the keyswitch footprints.
