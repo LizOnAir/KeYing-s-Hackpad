@@ -42,7 +42,7 @@ This hackpad uses KMK firmware.
 I'm definitely gonna edit the features soon ahhaha
 
 ## BOM:
-Here should be everything you need to make this hackpad
+Here should be [everything](https://docs.google.com/spreadsheets/d/1zaCOEk-ZGnszMIk4FFVV_LndeX-SJLxj8WLiJESGuGM/edit?gid=0#gid=0) you need to make this hackpad
 
 - 12x Cherry MX Switches
 - 12x DSA Keycaps
