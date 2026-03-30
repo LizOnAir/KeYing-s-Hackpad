@@ -17,8 +17,9 @@ from kmk.extensions.RGB import RGB
 
 keyboard = KMKKeyboard()
 
-keyboard.col_pins = (board.GP2, board.GP1, board.GP0, board.GP28)
-keyboard.row_pins = (board.GP0, board.GP4, board.GP3,)
+encoder.pins = ((board.D0, board.D1, None),)
+keyboard.col_pins = (board.D2, board.D6, board.D7, board.D8)
+keyboard.row_pins = (board.D3, board.D9, board.D10)
 keyboard.diode_orientation = DiodeOrientation.COL2ROW
 i2c = busio.I2C(scl=board.GP_SCL, sda=board.GP_SDA)
 rgb = RGB(pixel_pin=board.GP6, num_pixels=12)
@@ -41,7 +42,6 @@ keyboard.modules.append(MediaKeys())
 keyboard.modules.append(MouseKeys())
 keyboard.extensions.append(rgb)
 
-encoder.pins = ((board.GPIO26, board.GPIO27, None),)
 RAISE = KC.HT(KC.TAP, KC.HOLD, prefer_hold=True, tap_interrupted=False, tap_time=2000, repeat=HoldTapRepeat.NONE)
 TRANS = KC.TRANS
 BASE = KC.DF(0)
