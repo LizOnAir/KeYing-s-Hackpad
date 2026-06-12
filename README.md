@@ -1,4 +1,5 @@
 # Hackpad
+<img width="3024" height="4032" alt="a" src="https://github.com/user-attachments/assets/c8bd1286-df8f-411d-922b-7d23ef9a4832" />
 
 This hackpad is a 12 key macropad with a rotary encoder, an OLED Display. It also has 12 SK6812 MINI-E LEDs, and uses KMK firmware.
 
